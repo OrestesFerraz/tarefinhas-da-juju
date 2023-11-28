@@ -1,0 +1,24 @@
+/* Programa que recebe 5 números
+ e armazene-os em um vetor. Exiba as informações
+  contidas no vetor. Faça a soma dos valores do vetor e
+  exiba o resultado da soma*/
+#include <stdio.h>
+#include <locale.h>
+
+int main () {
+
+    setlocale(LC_ALL, "Portuguese");
+    int vet[5], num;
+
+    for (int i = 0; i < 5; i++) {
+        printf("informe um número");
+        scanf(" %d", &vet[i]);
+    }
+
+    num = vet[0] + vet[1] + vet[2] + vet[3] + vet[4];
+
+    printf("o resultado de %d + %d + %d + %d + %d é %d",vet[0] ,vet[1] ,vet[2] ,vet[3] ,vet[4], num);
+
+
+    return 0;
+}
